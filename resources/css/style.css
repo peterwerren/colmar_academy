@@ -1,0 +1,579 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  color: seashell;
+  font-size: 22px;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  padding: 10px;
+  margin: 0;
+}
+
+.main {
+  padding-top: 64px; /* To offset fixed header */
+  width: auto;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  z-index: 1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+header .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+header .bold {
+  font-weight: bold;
+}
+
+header .light {
+  color: lightgray;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav a {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 16px;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* Header MOBILE Section */
+
+@media only screen and (max-width: 760px) {
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+/* Learn Something Section */
+
+.learn-something {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  padding: 32px 40px 32px 50px;
+  background-color: lightgray;
+  align-items: center;
+}
+
+.learn-img img {
+  width: 65%;
+}
+
+.learn-text {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+}
+
+.hugely {
+  font-weight: bold;
+  font-family: "Arial Black";
+  font-size: 3rem;
+  color: #666666;
+  padding-bottom: 2.5rem;
+  text-align: left;
+}
+
+.medium {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #666666;
+  text-align: left;
+  padding-bottom: 2.5rem;
+}
+
+.start-here {
+  color: white;
+  padding-top: 10px;
+  background-color: darkgray;
+  height: 32px;
+}
+
+/* Learning Something MOBILE Section */
+
+@media only screen and (max-width: 760px) {
+
+  .learn-something.mobile {
+    flex-direction: column;
+  }
+
+  .learn-something {
+    padding-left: 16px;
+    justify-content: center;
+  }
+
+  .learn-text {
+    width: 100%;
+    padding-top: 32px;
+  }
+
+  .hugely  {
+    font-size: 2.5rem;
+  }
+
+  .medium  {
+    font-size: 1.5rem;
+  }
+
+  .learn-something.mobile {
+    justify-content: center;
+  }
+
+  .learn-img.mobile img {
+    display: flex;
+    width: 100%;
+  }
+
+}
+
+/* Doesn't Hurt Section */
+
+ .doesnt-hurt {
+  display: inline-flex;
+  padding-top: 32px;
+}
+
+.doesnt-hurt-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.doesnt-hurt-main-img img {
+  width: 60%;
+}
+
+.doesnt-hurt-main-text h3 {
+  color: #666666;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 20%;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.doesnt-hurt-main-text h4 {
+  color: #666666;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.doesnt-hurt-main-text h5 {
+  color: #666666;
+  font-weight: normal;
+  font-size: .75rem;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2%
+}
+
+.doesnt-hurt-3-images {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.doesnt-hurt-3-images-A {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+}
+
+.dh-3-img img {
+  width: 64%;
+}
+
+.dh-3-img.mobile {
+  display: none;
+}
+
+.dh-3-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+}
+
+.dh-3-text-h3 {
+  color: #666666;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 5%;
+}
+
+.dh-3-text-h4 {
+  color: #666666;
+  font-size: 1rem;
+  padding-bottom: 5%;
+}
+
+.dh-3-text-a {
+  color: skyblue;
+  font-size: .8rem;
+  padding: top: 20%;
+  padding: 10px;
+}
+
+/* Doesn't Hurt MOBILE Section */
+
+@media only screen and (max-width: 760px) {
+
+  .doesnt-hurt-main {
+    display: none;
+    padding-bottom: 10%;
+  }
+
+  .doesnt-hurt {
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .dh-3-img.mobile {
+    width: 35rem;
+    display: flex;
+  }
+
+  .dh-3-img.mobile img {
+    width: 100%;
+  }
+
+  .dh-3-img.desktop {
+    display: none;
+  }
+
+  .dh-3-text {
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .doesnt-hurt-3-images {
+    width: 100%;
+  }
+
+  .doesnt-hurt-3-images-A {
+    flex-direction: column;
+    padding: 16px;
+    padding-left: 4rem;
+  }
+
+}
+
+/* Start learning section */
+
+.start-learning h1 {
+  color: #666666;
+  font-size: 3rem;
+  font-family: "Arial Black";
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.start-learning-6-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: lightgray;
+  justify-content: center;
+}
+
+.start-learning-6-images-A {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 27rem;
+}
+
+.sl-6-img img {
+  width: 27rem;
+}
+
+.sl-6-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 16px;
+  background-color: white;
+  height: 100%;
+}
+
+.sl-6-course-title {
+  color: #666666;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 16px;
+}
+
+.sl-6-COURSE {
+  color: #666666;
+  font-size: 1rem;
+  padding-bottom: 8px;
+}
+
+.sl-6-details {
+  color: #666666;
+  font-size: 1rem;
+  padding: top: 8px;
+  padding-bottom: 24px;
+  padding-left: 10px;
+}
+
+/* Start Learning MOBILE Section */
+
+@media only screen and (max-width: 760px) {
+
+  .start-learning h1 {
+    background-color: #F3F5F5;
+  }
+
+  .start-learning-6-images-A {
+    background-color: white;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .sl-6-img.mobile {
+    display: none;
+  }
+
+  .sl-6-course-title {
+    background-color: lightgray;
+    padding: 16px;
+  }
+
+.sl-6-COURSE.mobile {
+    display: none;
+  }
+
+  .sl-6-details.mobile {
+    display: none;
+  }
+
+}
+
+/* Thesis Exhibit Section */
+
+.thesis-header h1 {
+  color: #666666;
+  font-size: 3rem;
+  font-family: "Arial Black";
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: bold;
+  background-color: #F3F5F5;
+}
+
+.thesis {
+  display: flex;
+  padding-top: 32px;
+  width: 100%;
+  border: 2px dotted black;
+}
+
+.thesis-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-main-text h3 {
+  color: #666666;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 20%;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.thesis-main-text h4 {
+  color: #666666;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 32px
+}
+
+.thesis-2-images {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.thesis-2-images-A {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  padding-bottom: 5%;
+}
+
+.th-2-img img {
+  width: 64%;
+}
+
+.th-2-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+}
+
+.th-2-text-h3 {
+  color: #666666;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 5%;
+}
+
+.th-2-text-h4 {
+  color: #666666;
+  font-size: 1rem;
+  padding-bottom: 5%;
+}
+
+.grayback {
+  background-color: lightgray;
+}
+
+/* Thesis Exhibit MOBILE Section */
+
+@media only screen and (max-width: 760px) {
+
+  .thesis-main-img video {
+    width: auto;
+  }
+
+  .thesis-main-text.mobile {
+    display: none;
+  }
+
+}
+
+/* Footer */
+
+footer {
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .li {
+  color: seashell;
+}
+
+footer .copyright {
+  display: flex;
+  font-size: 1rem;
+  color: #4a4a4a;
+  flex: 1;
+}
+
+footer nav ul {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 760px) {
+
+  .footer-menu.mobile {
+    display: none;
+  }
+
+}
